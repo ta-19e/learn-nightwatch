@@ -7,12 +7,7 @@
     "node": ">=4.4.6"
   },
   "scripts": {
-    "test": "nightwatch --env local",
-    "ie": "nightwatch -e ie11",
-    "sauce": "nightwatch -e chrome,ie11,android_s4_emulator,iphone_6_simulator",
-    "upload": "node test/e2e/upload_screenshots_to_s3.js",
-    "e2e": "npm run sauce; npm run upload",
-    "dev": "nodemon -w test/index.html --delay 250ms --exec 'npm run upload'"
+    "test": "nightwatch --env local"
   },
   "repository": {
     "type": "git",
@@ -26,11 +21,9 @@
   "homepage": "https://github.com/dwyl/learn-nightwatch#readme",
   "dependencies": {
     "nightwatch": "^1.2.4",
-    "saucelabs": "^3.0.1",
     "selenium-download": "^2.0.7"
   },
   "devDependencies": {
-    "aws-sdk": "^2.7.13",
     "chromedriver": "^80.0.1",
     "env2": "^2.1.1",
     "mime-types": "^2.1.13",
