@@ -7,7 +7,8 @@
     "node": ">=4.4.6"
   },
   "scripts": {
-    "test": "nightwatch --env local"
+    "test": "nightwatch --env local",
+    "lint": "eslint 'test/**/*.js'"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,9 @@
   "devDependencies": {
     "chromedriver": "^80.0.1",
     "env2": "^2.1.1",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
     "mime-types": "^2.1.13",
     "nodemon": "^2.0.0",
     "selenium-server": "^3.8.1"
