@@ -15,6 +15,8 @@ module.exports = {
     ecmaVersion: 2018,
   },
   rules: {
-    "func-names": "off"
+    "func-names": "off",
+    "no-unused-expressions": "off",
+    "quotes": "off"
   },
 };
