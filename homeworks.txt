@@ -56,7 +56,7 @@
 -----
 
  * Open "https://ekspress.delfi.ee/"
- * open "Areen" -> "Kirjanud"
+ * open "Areen" -> "Kirjandus"
  * move to 3'rd page 
  * open last article from listing
  * Check that article has "kuula" button
