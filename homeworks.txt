@@ -61,3 +61,13 @@
  * open last article from listing
  * Check that article has "kuula" button
  * Take screenshot
+ 
+ 
+ ------------------------
+ 
+ chrome debug commands ( developer tools -> console )
+ 
+   * $x(XPATH_SELECTOR)
+   * document.querySelectorAll(CSS_SELECTOR)
+ 
+
