@@ -66,19 +66,17 @@ and want an _easier/faster_ way to write your acceptance tests, read on!
 
 _**Try it**_ on your local machine in 5 mins by following these _**3 easy steps**_:
 
-
-### 1. Clone
-
-- Clone the repository 
-
-
-### 2. Install JAVA
+### 1. Install JAVA
 
 - https://www.java.com/en/download/help/download_options.xml pick your Operating System and follow the instructions
 
 > **NB**: Close and open terminal after installing java!
 
-### 3. Install<sup>1</sup>
+### 2. Clone
+
+- Clone the repository 
+
+### 3. Install node packages
 
 Make sure you `cd learn-nightwatch` so that you're in the correct directory and then install the *required* dependencies
 including Selenium Server and `chromedriver`:
