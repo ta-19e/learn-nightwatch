@@ -69,15 +69,16 @@ _**Try it**_ on your local machine in 5 mins by following these _**3 easy steps*
 
 ### 1. Clone
 
-Clone the repository by _copy-pasting_ the following command into your terminal (replace `cp` with `copy` if you're on Windows):
+- Clone the repository 
 
-```sh
-git clone https://github.com/dwyl/learn-nightwatch.git && cd learn-nightwatch && cp sample.env .env
-```
 
-> Note: if you're _curious_ what that last part is, see: https://github.com/dwyl/env2
+### 2. Install JAVA
 
-### 2. Install<sup>1</sup>
+- https://www.java.com/en/download/help/download_options.xml pick your Operating System and follow the instructions
+
+> **NB**: Close and open terminal after installing java!
+
+### 3. Install<sup>1</sup>
 
 Make sure you `cd learn-nightwatch` so that you're in the correct directory and then install the *required* dependencies
 including Selenium Server and `chromedriver`:
@@ -87,7 +88,7 @@ npm install
 ```
 
 
-### 3. Run (_tests_)<sup>2</sup>
+### 4. Run (_tests_)<sup>2</sup>
 
 Run the Nightwatch tests:
 
