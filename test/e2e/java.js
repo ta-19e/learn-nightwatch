@@ -7,11 +7,10 @@ module.exports = {
     browser
       .url('https://www.java.com/en/')
       .waitForElementVisible("body")
-      .assert.title("I am a page title - Sauce Labs")
+      .assert.title("Java | Oracle")
       .saveScreenshot(`${config.imgpath(browser)}a-screenshot-description.png`);
 
           // document.querySelectorAll('#checked_checkbox:checked')
-            browser.expect.element("#checked_checkbox:checked").to.be.present;
 
             // document.querySelectorAll('#unchecked_checkbox:not(:checked)')
             browser.expect.element("#unchecked_checkbox:not(:checked)").to.be.present;

@@ -7,7 +7,7 @@ module.exports = {
     browser
       .url('https://www.youtube.com/')
       .waitForElementVisible("body")
-      .assert.title("I am a page title - Sauce Labs")
+      .assert.title("Youtube")
       .saveScreenshot(`${config.imgpath(browser)}a-screenshot-description.png`);
 
     // document.querySelectorAll('#checked_checkbox:checked')
