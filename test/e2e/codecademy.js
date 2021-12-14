@@ -18,8 +18,6 @@ module.exports = {
 
     browser.expect.element("div#no-element-like-this").not.to.be.present;
 
-    browser.assert.value("input#i_am_a_textbox", "i has no focus");
-
     browser
       .useXpath()
       // $x("//div[text()='i appear 3 times'][3]")
