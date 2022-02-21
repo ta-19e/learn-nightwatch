@@ -17,5 +17,16 @@ module.exports = {
       .assert.containsText('body', 'dwyl.com') // assert body contains text
       .saveScreenshot(`${conf.imgpath(browser)}dwyl.png`)
       .end();
-  },
+    },
+  'Demo test NeptuneN profile': function (browser) {
+    browser
+      .url('https://github.com/NeptuneN')
+      .waitForElementVisible('body');
+
+    browser
+      .saveScreenshot(`${conf.imgpath(browser)}github_neptunen.png`)
+      .assert.title('NeptuneN (Kevin Klemm)')
+      .assert.containsText('body', 'Achievements')
+      .end();
+  }
 };
