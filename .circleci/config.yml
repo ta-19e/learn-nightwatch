@@ -35,6 +35,14 @@ jobs:
     steps:
       - setup-js-job
       - run:
+          name: Install correct version of ChromeDriver
+          command: |
+            npm uninstall chromedriver
+            chrome_version_full=$(google-chrome --version)
+            chrome_major_version=$(echo $chrome_version_full | cut -d " " -f 3 | cut -d "." -f 1)
+            echo "download chrome ${chrome_major_version} [${chrome_version_full}]"
+            npm i "chromedriver@^${chrome_major_version}.0.0" --save-dev
+      - run:
           name: "Run visual testing (Nightwatch)"
           command: npm run test
       - store_artifacts:
