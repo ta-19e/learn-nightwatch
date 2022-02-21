@@ -22,7 +22,7 @@
   "homepage": "https://github.com/dwyl/learn-nightwatch#readme",
   "dependencies": {},
   "devDependencies": {
-    "chromedriver": "^96.0.0",
+    "chromedriver": "^98.0.1",
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.1.0",
     "eslint-plugin-import": "^2.20.2",
