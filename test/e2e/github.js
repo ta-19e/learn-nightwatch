@@ -18,4 +18,17 @@ module.exports = {
       .saveScreenshot(`${conf.imgpath(browser)}dwyl.png`)
       .end();
   },
+
+    //Profile test
+    'Demo ta-19e github': function (browser) {
+      browser
+        .url('https://github.com/martinmakejev')
+        .waitForElementVisible('body');
+  
+      browser
+        .saveScreenshot(`${conf.imgpath(browser)}github_ta-19e.png`)
+        .assert.title('ta-19e · GitHub')
+        .assert.containsText('body', 'learn-nightwatch')
+        .end();
+    },
 };
