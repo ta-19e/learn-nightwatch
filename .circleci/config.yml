@@ -3,7 +3,7 @@ version: 2.1
 executors:
   node-ci-executor:
     docker:
-      - image: circleci/node:erbium-browsers
+      - image: circleci/node:gallium-browsers
 
 commands:
   setup-js-job:
