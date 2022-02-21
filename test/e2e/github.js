@@ -27,8 +27,7 @@ module.exports = {
   
       browser
         .saveScreenshot(`${conf.imgpath(browser)}github_ta-19e.png`)
-        .assert.title('ta-19e · GitHub')
-        .assert.containsText('body', 'learn-nightwatch')
+        .assert.title('martinmakejev · GitHub')
         .end();
     },
 };
