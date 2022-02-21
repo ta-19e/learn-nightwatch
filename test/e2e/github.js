@@ -18,4 +18,15 @@ module.exports = {
       .saveScreenshot(`${conf.imgpath(browser)}dwyl.png`)
       .end();
   },
+  'Demo RaitBoach github': function (browser) {
+    browser
+      .url('http://www.github.com/RaitBoach')
+      .waitForElementVisible('body');
+  
+    browser
+    .saveScreenshot(`${conf.imgpath(browser)}github_RaitBoach.png`)
+    .assert.title('RaitBoach · GitHub')
+    .assert.containsText('body', 'nodejsttest')
+    .end();
+    }
 };
