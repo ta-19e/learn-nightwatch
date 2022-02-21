@@ -18,4 +18,15 @@ module.exports = {
       .saveScreenshot(`${conf.imgpath(browser)}dwyl.png`)
       .end();
   },
+  'Demo ta-19e github': function (browser) {
+    browser
+      .url('https://github.com/Kuldz')
+      .waitForElementVisible('body');
+
+    browser
+      .saveScreenshot(`${conf.imgpath(browser)}github_kuldz.png`)
+      .assert.title('Kuldz (Kuldar Kaasik) · GitHub')
+      .assert.containsText('body', 'Users')
+      .end();
+  },
 };
