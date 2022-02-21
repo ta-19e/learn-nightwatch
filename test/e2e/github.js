@@ -18,4 +18,15 @@ module.exports = {
       .saveScreenshot(`${conf.imgpath(browser)}dwyl.png`)
       .end();
   },
+  'Demo ta-19e github': function (browser) {
+    browser
+      .url('https://github.com/AndresTPT')
+      .waitForElementVisible('body');
+
+    browser
+      .saveScreenshot(`${conf.imgpath(browser)}github_AndresTPT.png`)
+      .assert.title('AndresTPT (Andres) · GitHub')
+      .assert.containsText('body', 'FurniFuture')
+      .end();
+  },
 };
