@@ -27,14 +27,25 @@ module.exports = {
 
     browser.useCss();
 
+    let username = '????';
+    try {
+      // eslint-disable-next-line global-require
+      username = String(require("os").userInfo().username);
+    } catch (e) {
+      // eslint-disable-next-line no-console
+      console.error(e);
+    }
+
     browser
-      // .pause(2000)
-      // .clearValue('#i_am_a_textbox')
-      // .setValue('#i_am_a_textbox', '00000000000')
-      // .pause(2000)
-      // .clearValue('#i_am_a_textbox')
-      // .setValue('#i_am_a_textbox', '11111111111111')
-      // .pause(2000)
+      .pause(1500)
+      .clearValue('#i_am_a_textbox')
+      .setValue('#i_am_a_textbox', `Hello there`)
+      .pause(1000)
+      .setValue('#i_am_a_textbox', ` "${username}"!`)
+      .pause(2500)
+      .saveScreenshot(`${config.imgpath(browser)}hello-there.png`)
+      .clearValue('#i_am_a_textbox')
+      .pause(1500)
       .clearValue("#i_am_a_textbox")
       .setValue("#i_am_a_textbox", "nightwatch roolz!")
       .saveScreenshot(`${config.imgpath(browser)}nightwatch-roolz.png`)
