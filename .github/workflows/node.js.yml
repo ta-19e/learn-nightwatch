@@ -13,7 +13,7 @@ permissions:
   contents: write
   
 jobs:
-  build:
+  run-linters:
     name: Run ESLint
     runs-on: ubuntu-latest
     steps:
