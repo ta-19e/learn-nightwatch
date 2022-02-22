@@ -7,6 +7,11 @@ on:
   pull_request:
     branches:
       - martin22.02.22
+      
+permissions:
+  checks: write
+  contents: write
+  
 jobs:
   build:
     name: Run ESLint
