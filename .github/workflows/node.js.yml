@@ -18,6 +18,6 @@ jobs:
       - run: npm ci
 
       # Run ESLint
-      - uses: eslint/github-action@v0
+      - uses: wearerequired/lint-action@v1
         with:
           eslint: true
