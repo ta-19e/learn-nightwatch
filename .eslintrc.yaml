@@ -14,3 +14,6 @@ rules:
   func-names: 'off'
   no-unused-expressions: 'off'
   quotes: 'off'
+  no-template-curly-in-string: 'off'
+  import/no-extraneous-dependencies: 'off'
+  no-plusplus: 'off'
