@@ -2,12 +2,20 @@ name: CI
 on: push
 jobs:
   build:
+    name: Run ESLint
     runs-on: ubuntu-latest
     steps:
-    
-    - name: Setup Node.js environment
-      uses: actions/setup-node@v2.5.1
       
-      
-    - name: Run ESLint
-      run: eslint . --ext .js,.jsx,.ts,.tsx
+      # Check out the repository
+      - uses: actions/checkout@v1
+
+      # Install Node.js
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+
+      # Install your dependencies
+      - run: npm ci
+
+      # Run ESLint
+      - uses: eslint/github-action@v0
