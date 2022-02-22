@@ -33,7 +33,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
-          echo test, and deploy your project.       
-          
+          echo test, and deploy your project.
+
       - name: ansible-lint
-        uses: ansible/ansible-lint-action@v4.1.0.post
+        uses: ansible/ansible-lint-action@v4.1.0.post0
