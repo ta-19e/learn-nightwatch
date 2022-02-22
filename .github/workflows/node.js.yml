@@ -1,5 +1,12 @@
 name: CI
-on: push
+on:
+  push:
+    branches:
+      - martin22.02.22
+
+  pull_request:
+    branches:
+      - martin22.02.22
 jobs:
   build:
     name: Run ESLint
